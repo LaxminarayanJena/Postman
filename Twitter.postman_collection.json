@@ -1,0 +1,192 @@
+{
+	"id": "557b8333-c6b4-4afa-bb36-3e01fff0b367",
+	"name": "Twitter",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"dadd9160-b9cd-45b3-b56b-b050658f1585",
+		"fb7ecdce-dd59-4683-b516-94b89d89e858",
+		"0789bd83-f027-4811-a716-78249560d7c6"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0789bd83-f027-4811-a716-78249560d7c6",
+			"name": "https://api.twitter.com/1.1/statuses/home_timeline.json?count=2 Copy",
+			"url": "https://api.twitter.com/1.1/statuses/home_timeline.json?count=3",
+			"description": "Get status",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "count",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"oauth1": [
+					{
+						"key": "addParamsToHeader",
+						"value": true
+					},
+					{
+						"key": "tokenSecret",
+						"value": "LdUqFQ8I2BfDaCyVe902hLAVs7gfqjmJtW89rzJD60hFm"
+					},
+					{
+						"key": "token",
+						"value": "1003172218380083200-2yHmYspJ6wCBB1xL3hD0gBFmRjuczy"
+					},
+					{
+						"key": "consumerSecret",
+						"value": "I1ygoeHA0M8ymi6O223NrkI038uF0s0n0uvvbas8m38AojLC3K"
+					},
+					{
+						"key": "consumerKey",
+						"value": "LukYUFWBLMwOE5xjjy8j1Pp17"
+					},
+					{
+						"key": "signatureMethod",
+						"value": "HMAC-SHA1"
+					},
+					{
+						"key": "version",
+						"value": "1.0"
+					},
+					{
+						"key": "addEmptyParamsToSign",
+						"value": false
+					}
+				],
+				"type": "oauth1"
+			},
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "dadd9160-b9cd-45b3-b56b-b050658f1585",
+			"name": "https://api.twitter.com/1.1/statuses/home_timeline.json?count=2",
+			"url": "https://api.twitter.com/1.1/statuses/update.json",
+			"description": "Get status",
+			"data": [
+				{
+					"key": "status",
+					"value": "4th tweet from automated script",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"oauth1": [
+					{
+						"key": "addParamsToHeader",
+						"value": true
+					},
+					{
+						"key": "tokenSecret",
+						"value": "LdUqFQ8I2BfDaCyVe902hLAVs7gfqjmJtW89rzJD60hFm"
+					},
+					{
+						"key": "token",
+						"value": "1003172218380083200-2yHmYspJ6wCBB1xL3hD0gBFmRjuczy"
+					},
+					{
+						"key": "consumerSecret",
+						"value": "I1ygoeHA0M8ymi6O223NrkI038uF0s0n0uvvbas8m38AojLC3K"
+					},
+					{
+						"key": "consumerKey",
+						"value": "LukYUFWBLMwOE5xjjy8j1Pp17"
+					},
+					{
+						"key": "signatureMethod",
+						"value": "HMAC-SHA1"
+					},
+					{
+						"key": "version",
+						"value": "1.0"
+					},
+					{
+						"key": "addEmptyParamsToSign",
+						"value": false
+					}
+				],
+				"type": "oauth1"
+			},
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "fb7ecdce-dd59-4683-b516-94b89d89e858",
+			"name": "https://api.twitter.com/1.1/statuses/home_timeline.json?count=2 Copy",
+			"url": "https://api.twitter.com/1.1/statuses/destroy/1003212038192037888.json",
+			"description": "Get status",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"oauth1": [
+					{
+						"key": "addParamsToHeader",
+						"value": true
+					},
+					{
+						"key": "tokenSecret",
+						"value": "LdUqFQ8I2BfDaCyVe902hLAVs7gfqjmJtW89rzJD60hFm"
+					},
+					{
+						"key": "token",
+						"value": "1003172218380083200-2yHmYspJ6wCBB1xL3hD0gBFmRjuczy"
+					},
+					{
+						"key": "consumerSecret",
+						"value": "I1ygoeHA0M8ymi6O223NrkI038uF0s0n0uvvbas8m38AojLC3K"
+					},
+					{
+						"key": "consumerKey",
+						"value": "LukYUFWBLMwOE5xjjy8j1Pp17"
+					},
+					{
+						"key": "signatureMethod",
+						"value": "HMAC-SHA1"
+					},
+					{
+						"key": "version",
+						"value": "1.0"
+					},
+					{
+						"key": "addEmptyParamsToSign",
+						"value": false
+					}
+				],
+				"type": "oauth1"
+			},
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}

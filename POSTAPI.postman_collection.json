@@ -1,0 +1,73 @@
+{
+	"id": "c8eadd61-2c2b-4cd6-9571-563b8e3199f3",
+	"name": "POSTAPI",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"0b745fee-d650-45c0-ad53-d88fea077923",
+		"d514e9e8-db0a-4d4b-b304-1a2a30d2e006"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0b745fee-d650-45c0-ad53-d88fea077923",
+			"name": "https://maps.googleapis.com/maps/api/place/add/json?key=AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+			"url": "https://maps.googleapis.com/maps/api/place/add/json?key=AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n  \"location\": {\r\n    \"lat\": -33.8669710,\r\n    \"lng\": 151.1958750\r\n  },\r\n  \"accuracy\": 50,\r\n  \"name\": \"Google Shoes!\",\r\n  \"phone_number\": \"(02) 9374 4000\",\r\n  \"address\": \"48 Pirrama Road, Pyrmont, NSW 2009, Australia\",\r\n  \"types\": [\"shoe_store\"],\r\n  \"website\": \"http://www.google.com.au/\",\r\n  \"language\": \"en-AU\"\r\n}\r\n",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d514e9e8-db0a-4d4b-b304-1a2a30d2e006",
+			"name": "https://maps.googleapis.com/maps/api/place/delete/json?key=AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+			"url": "https://maps.googleapis.com/maps/api/place/delete/json?key=AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+			"description": "Delete placeid",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n  \"place_id\": \"qgYvCi0wMDAwMDBhN2I3NzgxZjYwOjZiMTJhZTM3YjQ3OmZjYzc1MDg1OTIzZmRlN2M\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}

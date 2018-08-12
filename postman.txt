@@ -1,0 +1,67 @@
+Download Jira from below link
+
+https://www.atlassian.com/software/jira/download
+
+
+
+Authentication API
+
+https://developer.atlassian.com/jiradev/jira-apis/jira-rest-apis/jira-rest-api-tutorials/jira-rest-api-example-cookie-based-authentication
+
+
+
+
+----------------Login---------------------------------
+
+https://developer.atlassian.com/cloud/jira/platform/rest/#api/2/issue-createIssue
+
+http://localhost:8080/rest/auth/1/session
+{ "username": "selenium", "password": "123selenium" }
+
+
+
+------------------CreateIssue--------------------------------------------------------
+
+http://localhost:8080/rest/api/2/issue
+Cookie                       JSESSIONID=98A9211D45674516603B687FB4F0DA87
+
+
+
+{
+  "fields": {
+    "project": {
+      "key": "RES"
+    },
+    "summary": "Issue REST Summary",
+    "description": "Creating an issue",
+    "issuetype": {
+      "name": "Bug"
+    },
+    "labels": [
+      "Automation"
+    ],
+    "assignee": {
+      "name": ""
+    }
+  
+    
+  }
+
+-------------------------------update comment------------------------------------
+
+
+PUT
+
+http://localhost:8080/rest/api/2/issue/10004/comment/10002
+
+{
+      "body": "3rd comment added",
+      "visibility": {
+        "type": "role",
+        "value": "Administrators"
+      }
+    }
+
+
+
+-----------------------------------------------------------------------------

@@ -1,0 +1,68 @@
+{
+	"id": "04e3d4b0-7c7c-499b-b075-5255a207ebd1",
+	"name": "GETAPI",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"a862d393-2c31-4872-b0a7-f301ae056f67"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "a862d393-2c31-4872-b0a7-f301ae056f67",
+			"name": "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+			"url": "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "location",
+					"value": "-33.8670522,151.1957362",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "radius",
+					"value": "1500",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "restaurant",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "keyword",
+					"value": "cruise",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "key",
+					"value": "AIzaSyBGZXSmhZ27OIlH2xDSfCnzNqylx2FpoE4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}

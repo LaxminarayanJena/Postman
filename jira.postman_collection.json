@@ -1,0 +1,153 @@
+{
+	"id": "1c155ada-4e9a-423a-90b5-3c45d806f2b2",
+	"name": "jira",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"bbf0673f-c3d2-40ae-bc42-cc379fc0b510",
+		"89819bcf-abb9-4294-b747-e90c04fae168",
+		"9e15ab77-0d86-4cd2-b051-b2118f3f0355",
+		"88710693-835b-49cb-8a4d-5a3ee9fc292a",
+		"c17b9bac-f058-4bc1-85c4-49271481af06"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "88710693-835b-49cb-8a4d-5a3ee9fc292a",
+			"name": "http://localhost:8080/rest/api/2/issue/10004/comment",
+			"url": "http://localhost:8080/rest/api/2/issue/10004/comment",
+			"description": "comment",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Cookie",
+					"value": "JSESSIONID=98A9211D45674516603B687FB4F0DA87",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n      \"body\": \"2nd comment added\",\r\n      \"visibility\": {\r\n        \"type\": \"role\",\r\n        \"value\": \"Administrators\"\r\n      }\r\n    }",
+			"headers": "Cookie: JSESSIONID=98A9211D45674516603B687FB4F0DA87\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "89819bcf-abb9-4294-b747-e90c04fae168",
+			"name": "http://localhost:8080/rest/api/2/issue",
+			"url": "http://localhost:8080/rest/api/2/issue",
+			"description": "CREATE ISSUE",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Cookie",
+					"value": "JSESSIONID=CAC68F6CFBB66AC3E5B338F642F2C1B8\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n  \"fields\": {\r\n    \"project\": {\r\n      \"key\": \"RES\"\r\n    },\r\n    \"summary\": \"paytm Card Defect\",\r\n    \"description\": \"Creating 2nd bug\",\r\n    \"issuetype\": {\r\n      \"name\": \"Bug\"\r\n    }\r\n   \r\n   \r\n    \r\n  }\r\n}",
+			"headers": "Cookie: JSESSIONID=CAC68F6CFBB66AC3E5B338F642F2C1B8\"\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9e15ab77-0d86-4cd2-b051-b2118f3f0355",
+			"name": "http://localhost:8080/rest/api/2/issue/10003",
+			"url": "http://localhost:8080/rest/api/2/issue/10003",
+			"description": "Delete",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Cookie",
+					"value": "JSESSIONID=98A9211D45674516603B687FB4F0DA87",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Cookie: JSESSIONID=98A9211D45674516603B687FB4F0DA87\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bbf0673f-c3d2-40ae-bc42-cc379fc0b510",
+			"name": "http://localhost:8080/rest/auth/1/session\n",
+			"url": "http://localhost:8080/rest/auth/1/session\n",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{ \"username\": \"selenium\", \"password\": \"123selenium\" }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c17b9bac-f058-4bc1-85c4-49271481af06",
+			"name": "http://localhost:8080/rest/api/2/issue/10004/comment Copy",
+			"url": "http://localhost:8080/rest/api/2/issue/10004/comment/10002",
+			"description": "comment",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Cookie",
+					"value": "JSESSIONID=98A9211D45674516603B687FB4F0DA87",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n      \"body\": \"3rd comment added\",\r\n      \"visibility\": {\r\n        \"type\": \"role\",\r\n        \"value\": \"Administrators\"\r\n      }\r\n    }",
+			"headers": "Cookie: JSESSIONID=98A9211D45674516603B687FB4F0DA87\nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
